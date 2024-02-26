@@ -69,12 +69,21 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________
 <a name="Errors"></a>
 ## Errors
+
+#### Error 1
 - The tests using `expect(result).toBe(expected_results);` are not functioning properly
     ```
     TypeError: expect is not a function
       at Context.<anonymous> (utils\utils.test.js:45:5)
       at process.processImmediate (node:internal/timers:478:21)
     ```
+- Attempted fixes
+    - Installing jest
+    - Trying to put it in describe and test blocks
+    - Tried several examples from Stack Overflow including
+        - to.be, to.equal, and a few others
+    - Changing the expect variable name
+    - Restarting environment
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
