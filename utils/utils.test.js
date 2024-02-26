@@ -2,7 +2,7 @@
 // const utils = require('./utils');
 
 // function name method
-const { add, square } = require('./utils');
+const { add, square, asyncAdd } = require('./utils');
 
 const expect = require('expect');
 
@@ -30,17 +30,28 @@ it("Should square a number", () => {
     throw new Error(`Expected 25 but got ${result}`);
 });
 
+it('Should add two numbers asynchronously', (done) => {
+    asyncAdd(4,8, (sum) => {
+        if (sum !== 12)
+        throw new Error(`Expected 12 but got ${sum}`);
+        done();
+    })
+});
+
+
+//  ------------------------- EXPECT HAS ERRORS ---------------------------------------
+//  ------------------------- CURRENTLY NOT WORKING ---------------------------------------
 // with expect
 // 33 + 66 = 99
-it("Should add two numbers", () => {
-    const result = add(33, 66);
+// it("Should add two numbers", () => {
+//     const result = add(33, 66);
 
-    expect(result).toBe(99);
-});
+//     expect(result).toBe(99);
+// });
 
 // 6^2 = 36
-it("Should square a number", () => {
-    const result = square(6);
+// it("Should square a number", () => {
+//     const result = square(6);
     
-    expect(result).toBe(36);
-});
+//     expect(result).toBe(36);
+// });
