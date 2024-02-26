@@ -5,6 +5,7 @@
 1. [Mocha Unit Testing](#Mocha_Unit_Testing)
 2. [Mocha Express Testing](Mocha_Express_Testing)
 3. [Mocha Commands](#Mocha_Commands)
+4. [Installs](#Installs)
 
 [Credits](#Credits)
 __________________________________________________________________________________________________________________________________________
@@ -18,6 +19,8 @@ ________________________________________________________________________________
     - the `**` means mocha will check every folder of the current working directory/repo
     - the second `*.test.js` will look for any file that ends with test.js
 - We don't have to require mocha in the test file if we are running it with mocha
+- Use the `it()` function to test simple functions
+- 
 
 
 [Back to top](#Sections)
@@ -30,6 +33,8 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________
 <a name="Mocha_Commands"></a>
 ## Mocha Commands
+
+#### it()
 ```
 it("Message", () => {
     var var_name = function(parameter1, parameter2);
@@ -37,6 +42,16 @@ it("Message", () => {
      throw new Error('Expected expected_result but got ${var_name}');
 });
 ```
+
+[Back to top](#Sections)
+__________________________________________________________________________________________________________________________________________
+<a name="Installs"></a>
+## Installs
+
+- --save-dev for dev mode only
+    - `npm install mocha --save-dev`
+    - `npm install expect --save-dev`
+
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
