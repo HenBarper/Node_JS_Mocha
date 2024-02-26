@@ -6,6 +6,7 @@
 2. [Mocha Express Testing](Mocha_Express_Testing)
 3. [Mocha Commands](#Mocha_Commands)
 4. [Installs](#Installs)
+5. [Errors](#Errors)
 
 [Credits](#Credits)
 __________________________________________________________________________________________________________________________________________
@@ -52,6 +53,18 @@ ________________________________________________________________________________
     - `npm install mocha --save-dev`
     - `npm install expect --save-dev`
 
+
+[Back to top](#Sections)
+__________________________________________________________________________________________________________________________________________
+<a name="Errors"></a>
+## Errors
+- The tests using `expect(result).toBe(expected_results);` are not functioning properly
+    - Error:
+    ```
+    TypeError: expect is not a function
+      at Context.<anonymous> (utils\utils.test.js:45:5)
+      at process.processImmediate (node:internal/timers:478:21)
+    ```
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________

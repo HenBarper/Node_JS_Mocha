@@ -39,8 +39,8 @@ it("Should add two numbers", () => {
 });
 
 // 6^2 = 36
-// it("Should square a number", () => {
-//     const result = square(6);
+it("Should square a number", () => {
+    const result = square(6);
     
-//     expect(result).toBe(36);
-// });
+    expect(result).toBe(36);
+});
