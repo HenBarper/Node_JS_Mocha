@@ -30,7 +30,11 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________
 <a name="Mocha_Commands"></a>
 ## Mocha Commands
-- `it("Message", () => {\n var var_name = function(parameter1, parameter2);\n if var_name !== expected_result\n throw new Error('Expected expected_result but got ${var_name}') \n});`
+`it("Message", () => {
+    var var_name = function(parameter1, parameter2);
+     if (var_name !== expected_result);
+     throw new Error('Expected expected_result but got ${var_name}');
+});`
 
 [Back to top](#Sections)
 __________________________________________________________________________________________________________________________________________
